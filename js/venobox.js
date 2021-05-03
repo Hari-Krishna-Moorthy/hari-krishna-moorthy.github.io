@@ -1,7 +1,7 @@
-
 !(function (e) {
   "use strict";
-  var s, i,
+  var s,
+    i,
     a,
     t,
     o,
@@ -91,15 +91,15 @@
             cb_pre_open: function () {
               return !0;
             },
-            cb_post_open: function () { },
+            cb_post_open: function () {},
             cb_pre_close: function () {
               return !0;
             },
-            cb_post_close: function () { },
-            cb_post_resize: function () { },
-            cb_after_nav: function () { },
-            cb_content_loaded: function () { },
-            cb_init: function () { },
+            cb_post_close: function () {},
+            cb_post_resize: function () {},
+            cb_after_nav: function () {},
+            cb_content_loaded: function () {},
+            cb_init: function () {},
           },
           L
         );
@@ -115,51 +115,51 @@
               (H = N.data("share")),
               o.html(""),
               "iframe" !== N.data("vbtype") &&
-              "inline" !== N.data("vbtype") &&
-              "ajax" !== N.data("vbtype") &&
-              ((Q = {
-                pinterest:
-                  '<a target="_blank" href="https://pinterest.com/pin/create/button/?url=' +
-                  N.prop("href") +
-                  "&media=" +
-                  N.prop("href") +
-                  "&description=" +
-                  _ +
-                  '">' +
-                  Z +
-                  "</a>",
-                facebook:
-                  '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' +
-                  N.prop("href") +
-                  '">' +
-                  F +
-                  "</a>",
-                twitter:
-                  '<a target="_blank" href="https://twitter.com/intent/tweet?text=' +
-                  _ +
-                  "&url=" +
-                  N.prop("href") +
-                  '">' +
-                  G +
-                  "</a>",
-                linkedin:
-                  '<a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=' +
-                  N.prop("href") +
-                  '">' +
-                  J +
-                  "</a>",
-                download:
-                  '<a target="_blank" href="' +
-                  N.prop("href") +
-                  '">' +
-                  K +
-                  "</a>",
-              }),
+                "inline" !== N.data("vbtype") &&
+                "ajax" !== N.data("vbtype") &&
+                ((Q = {
+                  pinterest:
+                    '<a target="_blank" href="https://pinterest.com/pin/create/button/?url=' +
+                    N.prop("href") +
+                    "&media=" +
+                    N.prop("href") +
+                    "&description=" +
+                    _ +
+                    '">' +
+                    Z +
+                    "</a>",
+                  facebook:
+                    '<a target="_blank" href="https://www.facebook.com/sharer/sharer.php?u=' +
+                    N.prop("href") +
+                    '">' +
+                    F +
+                    "</a>",
+                  twitter:
+                    '<a target="_blank" href="https://twitter.com/intent/tweet?text=' +
+                    _ +
+                    "&url=" +
+                    N.prop("href") +
+                    '">' +
+                    G +
+                    "</a>",
+                  linkedin:
+                    '<a target="_blank" href="https://www.linkedin.com/sharing/share-offsite/?url=' +
+                    N.prop("href") +
+                    '">' +
+                    J +
+                    "</a>",
+                  download:
+                    '<a target="_blank" href="' +
+                    N.prop("href") +
+                    '">' +
+                    K +
+                    "</a>",
+                }),
                 e.each(H, function (e, s) {
                   o.append(Q[s]);
                 })),
               (g = k || e('.vbox-item[data-gall="' + C + '"]')).length < 2 &&
-              ((p = !1), (x = !1)),
+                ((p = !1), (x = !1)),
               (z = g.eq(g.index(N) + 1)),
               (B = g.eq(g.index(N) - 1)),
               z.length || !0 !== p || (z = g.eq(0)),
@@ -175,45 +175,45 @@
                 ? (e(".vbox-prev").css("display", "block"), (M = !0))
                 : (e(".vbox-prev").css("display", "none"), (M = !1)),
               (!0 !== M && !0 !== P) ||
-              (n.on(de.DOWN, ce), n.on(de.MOVE, re), n.on(de.UP, le));
+                (n.on(de.DOWN, ce), n.on(de.MOVE, re), n.on(de.UP, le));
           }
           function ie(e) {
             return (
               !(e.length < 1) &&
               !m &&
               ((m = !0),
-                (w = e.data("overlay") || e.data("overlaycolor")),
-                (b = e.data("framewidth")),
-                (h = e.data("frameheight")),
-                (r = e.data("border")),
-                (i = e.data("bgcolor")),
-                (v = e.data("href") || e.attr("href")),
-                (s = e.data("autoplay")),
-                (_ = (e.data("titleattr") && e.attr(e.data("titleattr"))) || ""),
-                e === B && n.addClass("vbox-animated").addClass("swipe-right"),
-                e === z && n.addClass("vbox-animated").addClass("swipe-left"),
-                O.show(),
-                void n.animate({ opacity: 0 }, 500, function () {
-                  y.css("background", w),
-                    n
-                      .removeClass("vbox-animated")
-                      .removeClass("swipe-left")
-                      .removeClass("swipe-right")
-                      .css({ "margin-left": 0, "margin-right": 0 }),
-                    "iframe" == e.data("vbtype")
-                      ? he()
-                      : "inline" == e.data("vbtype")
-                        ? pe()
-                        : "ajax" == e.data("vbtype")
-                          ? be()
-                          : "video" == e.data("vbtype")
-                            ? ke(s)
-                            : (n.html('<img src="' + v + '">'), ge()),
-                    (N = e),
-                    L(),
-                    (m = !1),
-                    se.cb_after_nav(N, U, z, B);
-                }))
+              (w = e.data("overlay") || e.data("overlaycolor")),
+              (b = e.data("framewidth")),
+              (h = e.data("frameheight")),
+              (r = e.data("border")),
+              (i = e.data("bgcolor")),
+              (v = e.data("href") || e.attr("href")),
+              (s = e.data("autoplay")),
+              (_ = (e.data("titleattr") && e.attr(e.data("titleattr"))) || ""),
+              e === B && n.addClass("vbox-animated").addClass("swipe-right"),
+              e === z && n.addClass("vbox-animated").addClass("swipe-left"),
+              O.show(),
+              void n.animate({ opacity: 0 }, 500, function () {
+                y.css("background", w),
+                  n
+                    .removeClass("vbox-animated")
+                    .removeClass("swipe-left")
+                    .removeClass("swipe-right")
+                    .css({ "margin-left": 0, "margin-right": 0 }),
+                  "iframe" == e.data("vbtype")
+                    ? he()
+                    : "inline" == e.data("vbtype")
+                    ? pe()
+                    : "ajax" == e.data("vbtype")
+                    ? be()
+                    : "video" == e.data("vbtype")
+                    ? ke(s)
+                    : (n.html('<img src="' + v + '">'), ge()),
+                  (N = e),
+                  L(),
+                  (m = !1),
+                  se.cb_after_nav(N, U, z, B);
+              }))
             );
           }
           function ae(e) {
@@ -248,9 +248,9 @@
               if ((k.preventDefault(), (N = e(this)), !1 === se.cb_pre_open(N)))
                 return !1;
               switch (
-              ((ee.VBnext = function () {
-                ie(z);
-              }),
+                ((ee.VBnext = function () {
+                  ie(z);
+                }),
                 (ee.VBprev = function () {
                   ie(B);
                 }),
@@ -381,12 +381,12 @@
                   "iframe" == N.data("vbtype")
                     ? he()
                     : "inline" == N.data("vbtype")
-                      ? pe()
-                      : "ajax" == N.data("vbtype")
-                        ? be()
-                        : "video" == N.data("vbtype")
-                          ? ke(s)
-                          : (n.html('<img src="' + v + '">'), ge()),
+                    ? pe()
+                    : "ajax" == N.data("vbtype")
+                    ? be()
+                    : "video" == N.data("vbtype")
+                    ? ke(s)
+                    : (n.html('<img src="' + v + '">'), ge()),
                     se.cb_post_open(N, U, z, B);
                 }),
                 e("body").keydown(ae),
@@ -442,10 +442,10 @@
             (A = 50),
             (V = !1);
           var de = {
-            DOWN: "touchmousedown",
-            UP: "touchmouseup",
-            MOVE: "touchmousemove",
-          },
+              DOWN: "touchmousedown",
+              UP: "touchmouseup",
+              MOVE: "touchmousemove",
+            },
             ne = function (s) {
               var i;
               switch (s.type) {
@@ -535,10 +535,10 @@
               : "youtube" == i.type && (s = "https://www.youtube.com/embed/"),
               n.html(
                 '<iframe class="venoframe vbvid" webkitallowfullscreen mozallowfullscreen allowfullscreen allow="autoplay" frameborder="0" src="' +
-                s +
-                i.id +
-                a +
-                '"></iframe>'
+                  s +
+                  i.id +
+                  a +
+                  '"></iframe>'
               ),
               me();
           }
@@ -548,10 +548,10 @@
           function ge() {
             (j = n.find("img")).length
               ? j.each(function () {
-                e(this).one("load", function () {
-                  me();
-                });
-              })
+                  e(this).one("load", function () {
+                    me();
+                  });
+                })
               : me();
           }
           function me() {
